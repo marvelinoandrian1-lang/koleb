@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data & Fakta - EcoBumi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <div class="logo">EcoBumi.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="data.html" class="active">Data & Fakta</a></li>
+                <li><a href="aksi.html">Aksi & Rekomendasi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container data-page">
+        <h1>Data & Fakta</h1>
+        <p>Hasil kuesioner perilaku hemat energi siswa kelas XI.</p>
+
+        <div class="stats-grid">
+            <article class="stat-card">
+                <span>Responden</span>
+                <strong id="jumlah-responden">—</strong>
+            </article>
+            <article class="stat-card">
+                <span>Partisipasi</span>
+                <strong id="persen-partisipasi">—</strong>
+            </article>
+            <article class="stat-card">
+                <span>Rata-rata skor</span>
+                <strong id="rata-rata-skor">—</strong>
+            </article>
+        </div>
+
+        <p id="status-data" role="status">Memuat data...</p>
+
+        <section class="chart-card">
+            <h2>Rata-rata Skor per Perilaku</h2>
+            <div class="chart-box">
+                <canvas id="chart-perilaku"></canvas>
+            </div>
+            <p class="chart-note">
+                Skor tertinggi adalah praktik hemat energi sehari-hari (3,51).
+                Skor terendah adalah membatasi penggunaan gawai/laptop dan mengajak
+                teman berhemat (masing-masing 3,22).
+            </p>
+        </section>
+
+        <section class="chart-card">
+            <h2>Kategori Skor Responden</h2>
+            <div class="chart-box chart-box-doughnut">
+                <canvas id="chart-kategori"></canvas>
+            </div>
+            <p class="chart-note">
+                Sebanyak 59,4% responden masuk kategori Sangat Baik dan 36,8%
+                kategori Baik. Kategori ditentukan dari rata-rata skor kuesioner.
+            </p>
+        </section>
+
+        <p class="data-source">
+            Sumber: Kuesioner Perilaku Hemat Energi Siswa Kelas XI.
+            Skala skor 1–4; data merupakan jawaban kuesioner, bukan pengukuran
+            langsung pemakaian listrik.
+        </p>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Proyek Kolaborasi - SMK Wikrama Bogor</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data-perilaku-energi.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampanye Hemat Energi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-inner">
+            <div class="logo">EcoBumi.</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="data.html">Data & Fakta</a></li>
+                <li><a href="aksi.html">Aksi & Rekomendasi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+<header class="hero">
+    <div class="hero-content container">
+        <!-- Badge pemanis ala UI modern -->
+        <div class="badge">Kampanye Sekolah Adiwiyata</div>
+        
+        <!-- Judul dengan text-gradient pada baris kedua -->
+        <h1>Energi terjaga,<br><span class="text-gradient">Bumi bernapas lega.</span></h1>
+        
+        <p class="tagline">Kampanye kolektif untuk menghentikan pemborosan listrik. Matikan perangkat yang tak perlu, mulai dari meja belajar kita sendiri.</p>
+        
+        <div class="btn-group">
+            <a href="#teaser" class="btn-primary">Lihat Faktanya</a>
+            <a href="#" class="btn-secondary">Tentang Proyek</a>
+        </div>
+    </div>
+</header>
+
+    <!-- Highlight Section -->
+    <section class="highlights container">
+        <div class="card">
+            <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.2 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <h3>Pencahayaan</h3>
+            <p>Lampu sering dibiarkan menyala terang di siang hari saat ruang kelas sedang kosong.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+            </div>
+            <h3>Pendingin Ruang</h3>
+            <p>Kipas angin atau AC terus beroperasi penuh tanpa ada siswa di dalam ruangan.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>
+            </div>
+            <h3>Daya Siaga</h3>
+            <p>Proyektor dan PC yang dibiarkan menyala standby terus-menerus menyedot energi.</p>
+        </div>
+    </section>
+
+    <!-- Teaser Section -->
+    <main class="container">
+        <section class="teaser" id="teaser">
+            <div class="teaser-text">
+                <h2>Mengapa kampanye ini penting?</h2>
+                
+                <!-- Paragraf ini diberi ID agar bisa diubah oleh Fitur 2 -->
+                <p id="teks-fakta">Setiap perangkat yang terus terhubung secara diam-diam menguras sumber daya alam kita. Kita sering kali tidak sadar akan kebiasaan kecil yang berujung pada pemborosan energi masif di sekolah.</p>
+                
+                <!-- Tombol pemanggil Fitur 2 (ubah teks) -->
+                <button onclick="ubahFakta()" class="btn-secondary" style="margin: 10px 0 20px; cursor: pointer;">Baca Fakta Lain</button>
+                
+                <p>Website ini menyajikan data faktual hasil kuesioner warga sekolah, lalu mengubah temuan tersebut menjadi langkah hemat energi yang dapat dilakukan.</p>
+                <a href="data.html" class="btn-primary">Lihat Data & Fakta</a>
+            </div>
+            <div class="teaser-image">
+                <div class="image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuvXa742rKB8WFTQEcb8_MwF-jAptLvw_srH4T90dnCQ&s=10" alt="Ilustrasi penghematan energi" width="500" height="500">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Proyek Kolaborasi - SMK Wikrama Bogor</p>
+        </div>
+    </footer>
+
+    <!-- Sambungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
